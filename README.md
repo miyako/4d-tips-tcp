@@ -17,7 +17,7 @@ How to send large TCP data
 
 [`TCPListener`](https://developer.4d.com/docs/ja/API/TCPListenerClass)は，TCPサーバーの**待ち受け**を実装するためのクラスです。コンストラクターの`4D.TCPListener.new()`にポート番号を渡してインスタンス化します。新しいTCPクライアントが接続するたびに新しい`TCPConnection`を暗黙的にインスタンス化することにより，同時に多数のクライアントを扱うことができます。多数のクライアントを扱うために多数のプロセスを起動することはしません。
 
-[`TCPEvent`](https://developer.4d.com/docs/ja/API/TCPEventClass)は，TCPクライアントおよびTCPサーバーのコールバック関数に渡されるデータオブジェクトです。4Dが内部的にインスタンス化するクラスであり，**明示的にコンストラクターを呼び出すことはしません**。
+[`TCPEvent`](https://developer.4d.com/docs/ja/API/TCPEventClass)は，TCPクライアントおよびTCPサーバーのコールバック関数に渡される引数データのテンプレートクラスです。4Dが内部的にインスタンス化するクラスであり，**明示的にコンストラクターを呼び出すことはしません**。
 
 ### テスト画面
 
