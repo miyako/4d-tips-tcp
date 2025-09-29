@@ -10,11 +10,14 @@ How to send large TCP data
 
 20 R8では，[TCPクライアント](https://blog.4d.com/ja/new-class-to-perform-tcp-connections/)，20 R9では[TCPサーバー](https://blog.4d.com/ja/new-class-to-handle-incoming-tcp-connections/)を作成するためのクラスが追加されました。新しいTCPクラスは，[4D Internet Commands](https://doc.4d.com/4Dv20/4D/20/Low-Level-Routines-Overview.300-6341155.ja.html)のTCP/IPコマンドとは違い，いずれも[プリエンプティブプロセス](https://developer.4d.com/docs/ja/Develop/preemptive-processes)に対応しています。ネットワーク通信は，メソッドを実行中のプロセスではなく，4Dの**バックグラウンドスレッド**で実行され，古典的なループ処理ではなく，コールバック関数でデータを処理します。
 
-### 資料
+### classes
 
-* [`TCPConnection`](https://developer.4d.com/docs/ja/API/TCPConnectionClass#tcpconnection-オブジェクト)
-* [`TCPListener`](https://developer.4d.com/docs/ja/API/TCPListenerClass)
-* [`TCPEvent`](https://developer.4d.com/docs/ja/API/TCPEventClass)
+[`TCPConnection`](https://developer.4d.com/docs/ja/API/TCPConnectionClass#tcpconnection-オブジェクト)は，TCPクライアントおよびTCPサーバーの**データ送受信**を実装するためのクラスです。TCPクライアントの場合，コンストラクターの`4D.TCPConnection.new()`にポート番号とホスト名またはアドレスを渡してインスタンス化します。TCPサーバーの場合，**明示的にコンストラクターを呼び出すことはしません**。
+
+
+[`TCPListener`](https://developer.4d.com/docs/ja/API/TCPListenerClass)は，TCPサーバーの**待ち受け**を実装するためのクラスです。コンストラクターの`4D.TCPConnection.new()`にポート番号を渡してインスタンス化します。新しいTCPクライアントが接続するたびに新しい`TCPConnection`を暗黙的にインスタンス化することにより，同時に多数のクライアントを扱うことができます。多数のクライアントを扱うために多数のプロセスを起動することはしません。
+
+[`TCPEvent`](https://developer.4d.com/docs/ja/API/TCPEventClass)は，TCPクライアントおよびTCPサーバーのコールバック関数に渡されるデータオブジェクトです。4Dが内部的に管理するクラスであり，**明示的にコンストラクターを呼び出すことはしません**。
 
 ### テスト画面
 
