@@ -6,8 +6,12 @@
 # 4d-tips-tcp
 How to send large TCP data
 
-#### 資料
+### 資料
 
 * [`TCPConnection`](https://developer.4d.com/docs/ja/API/TCPConnectionClass#tcpconnection-オブジェクト)
 * [`TCPListener`](https://developer.4d.com/docs/ja/API/TCPListenerClass)
 * [`TCPEvent`](https://developer.4d.com/docs/ja/API/TCPEventClass)
+
+### テスト画面
+
+<img width="509" height="354" alt="" src="https://github.com/user-attachments/assets/5bdf5da7-f997-49b9-a17d-11a117c4cfda" />
