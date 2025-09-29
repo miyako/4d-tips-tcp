@@ -1,7 +1,7 @@
 If (FORM Event:C1606.code=On Clicked:K2:4)
 	
 	var $data : Blob
-	var $KB : Integer
+	var $KB; $MB : Integer
 	$KB:=1024
 	$MB:=1024^2
 	

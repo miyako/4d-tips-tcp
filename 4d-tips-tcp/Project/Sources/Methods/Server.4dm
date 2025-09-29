@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"preemptive":"incapable"}
+//%attributes = {"invisible":true,"preemptive":"capable"}
 #DECLARE($processClass : 4D:C1709.Class; $processName : Text)
 
 Case of 

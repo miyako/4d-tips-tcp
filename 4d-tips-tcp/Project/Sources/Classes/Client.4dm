@@ -26,6 +26,7 @@ on in a pure worker divoced from any UI
 	
 Function onData($connection : 4D:C1709.TCPConnection; $event : 4D:C1709.TCPEvent) : Object
 	
+	var $header : Object
 	$header:=This:C1470.fromHeader($event.data)
 	
 	Case of 
