@@ -14,4 +14,4 @@ How to send large TCP data
 
 ### テスト画面
 
-<img width="509" height="354" alt="" src="https://github.com/user-attachments/assets/c074be1d-c675-4777-9ad0-717aad24b1c1" />
+<img width="509" height="354" alt="" src="https://github.com/user-attachments/assets/5bdf5da7-f997-49b9-a17d-11a117c4cfda" />
