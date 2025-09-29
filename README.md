@@ -8,7 +8,7 @@ How to send large TCP data
 
 ### about
 
-4D 20 R8では，[TCPクライアント](https://blog.4d.com/ja/new-class-to-perform-tcp-connections/)，20 R9では[TCPサーバー](https://blog.4d.com/ja/new-class-to-handle-incoming-tcp-connections/)を作成するための標準コマンドが追加されました。
+20 R8では，[TCPクライアント](https://blog.4d.com/ja/new-class-to-perform-tcp-connections/)，20 R9では[TCPサーバー](https://blog.4d.com/ja/new-class-to-handle-incoming-tcp-connections/)を作成するためのクラスが追加されました。[4D Internet Commands](https://doc.4d.com/4Dv20/4D/20/Low-Level-Routines-Overview.300-6341155.ja.html)のTCP/IPコマンドとは違い，TCPクラスは[プリエンプティブプロセス](https://developer.4d.com/docs/ja/Develop/preemptive-processes)に対応しています。
 
 ### 資料
 
