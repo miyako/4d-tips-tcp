@@ -6,6 +6,10 @@
 # 4d-tips-tcp
 How to send large TCP data
 
+### about
+
+4D 20 R8では，[TCPクライアント](https://blog.4d.com/ja/new-class-to-perform-tcp-connections/)，20 R9では[TCPサーバー](https://blog.4d.com/ja/new-class-to-handle-incoming-tcp-connections/)を作成するための標準コマンドが追加されました。
+
 ### 資料
 
 * [`TCPConnection`](https://developer.4d.com/docs/ja/API/TCPConnectionClass#tcpconnection-オブジェクト)
