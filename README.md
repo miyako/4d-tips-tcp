@@ -31,7 +31,7 @@ How to send large TCP data
 > [!WARNING]
 > フォームイベントでTCPクラスをインスタンス化した場合，理論的にはフォームが閉じられた後にコールバック関数が呼ばられる可能性があります。念の為，コールバックには`Form#Null`のチェックを含めると良いでしょう。
 
-TCPクライアントは，経過を視覚的に確認できるフォームのコンテキストで実装したい場合もあれば，ユーザーインターフェースを持たないプロセスで実行したい場合もあります。例題では，ユーザーインターフェースとは関係のない共通のコードを[`cs.Client`](Project/Sources/Classes/Client.4dm)クラスに実装し，継承クラスである[`ClientForm`](https://github.com/miyako/4d-tips-tcp/blob/main/4d-tips-tcp/Project/Sources/Classes/ClientForm.4dm)にフォーム特有のコードを実装しています。
+TCPクライアントは，経過を視覚的に確認できるフォームのコンテキストで実装したい場合もあれば，ユーザーインターフェースを持たないプロセスで実行したい場合もあります。例題では，ユーザーインターフェースとは関係のない共通のコードを[`cs.Client`](4d-tips-tcp/Project/Sources/Classes/Client.4dm)クラスに実装し，継承クラスである[`cs.ClientForm`](4d-tips-tcp/Project/Sources/Classes/ClientForm.4dm)にフォーム特有のコードを実装しています。
 
 
 
