@@ -66,7 +66,7 @@ This.data:=$buf
 
 |JSONプロパティ|意味|
 |:-|:-|
-|`mesasge`|Sure!: サイズ情報を認識した<br />Thanks!: 完了した<br />Oops!: エラー|
+|`mesasge`|`Sure!` サイズ情報を認識した<br />`Thanks!` 完了した<br />`Oops!` エラー|
 |`size`|これまで受信したバイト数|
 |`total`|全部で受信するバイト数|
 |`complete`|完了したら`True`|
