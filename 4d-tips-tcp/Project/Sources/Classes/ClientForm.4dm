@@ -14,6 +14,11 @@ Function onLoad() : cs:C1710.ClientForm
 	
 	This:C1470.start()
 	
+	var $property : Text
+	For each ($property; This:C1470.connection)
+		This:C1470[$property]:=This:C1470.connection[$property]
+	End for each 
+	
 	return This:C1470
 	
 Function onUnload()
