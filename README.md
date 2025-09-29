@@ -19,6 +19,15 @@ How to send large TCP data
 
 [`TCPEvent`](https://developer.4d.com/docs/ja/API/TCPEventClass)は，TCPクライアントおよびTCPサーバーのコールバック関数に渡される引数データのテンプレートクラスです。4Dが内部的にインスタンス化するクラスであり，**明示的にコンストラクターを呼び出して作成することはしません**。
 
+### callback
+
+`TCPConnection`および`TCPListener`をインスタンス化すると，非同期コールバック関数が発生することになります。コールバック関数は，ダイアログ実行中に発生するフォームイベントのようなものであり，`TCPEvent`のインスタンスが引数として渡されます。どんなフォーミュラでも非同期コールバック関数にすることができますが，ユーザークラスのメンバー関数としてコールバックを実装し，そのクラスのインスタンスから`This`を`TCPConnection`または`TCPListener`のコンストラクターに渡すスタイルが一般的です。
+
+
+
+
+
+
 ### テスト画面
 
 <img width="509" height="354" alt="" src="https://github.com/user-attachments/assets/5bdf5da7-f997-49b9-a17d-11a117c4cfda" />
