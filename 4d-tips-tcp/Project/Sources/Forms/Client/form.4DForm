@@ -34,7 +34,8 @@
 					"events": [
 						"onClick"
 					],
-					"action": "accept"
+					"action": "accept",
+					"focusable": false
 				},
 				"connection.address": {
 					"type": "input",
@@ -150,7 +151,8 @@
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/send.4dm"
+					"method": "ObjectMethods/send.4dm",
+					"focusable": false
 				},
 				"Text4": {
 					"type": "text",
